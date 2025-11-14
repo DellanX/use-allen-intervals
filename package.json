@@ -14,9 +14,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --ui --coverage",
-    "build": "tsc -p tsconfig.json && rollup -c",
     "build:ts": "tsc -p tsconfig.json",
-    "build:rollup": "rollup -c",
+    "build": "rollup -c",
     "prepare": "npm run build"
   },
   "author": "Dyllan Macias",
