@@ -42,4 +42,19 @@ describe("useGetIntervalRelation", () => {
         expect(spy).toHaveBeenCalledWith(a, b, 0.5);
         expect(val).toBe("REL");
     });
+
+    it("uses default tolerance when none is provided", () => {
+        const spy = vi
+            .spyOn(relationModule, "getIntervalRelation")
+            .mockReturnValue("DEF" as any);
+
+        const a = { start: 1, stop: 2 };
+        const b = { start: 2, stop: 3 };
+
+        const result = useGetIntervalRelation(a, b);
+        const val = result.value; // force computed
+
+        expect(spy).toHaveBeenCalledWith(a, b, 0);
+        expect(val).toBe("DEF");
+    });
 });

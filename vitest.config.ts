@@ -5,5 +5,11 @@ export default defineConfig({
         include: [
             "tests/**/*.test.ts"
         ]
+        ,
+        coverage: {
+            provider: 'istanbul',
+            reporter: ['text', 'lcov'],
+            reportsDirectory: 'coverage'
+        }
     },
 });
