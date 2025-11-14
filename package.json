@@ -1,0 +1,22 @@
+{
+  "name": "use-allen-intervals",
+  "version": "0.1.0",
+  "description": "A library for composable interactions and checks for allen interval algebra",
+  "main": "source/index.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "author": "Dyllan Macias",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/ui": "^4.0.8",
+    "vitest": "^4.0.8"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.24"
+  }
+}
