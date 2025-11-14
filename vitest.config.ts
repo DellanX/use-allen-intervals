@@ -6,6 +6,11 @@ export default defineConfig({
             "tests/**/*.test.ts"
         ]
         ,
+        // reporters: include default console reporter and junit reporter to write XML file
+        reporters: [
+            'default',
+            ['junit', { outputFile: 'coverage/junit.xml' }]
+        ],
         coverage: {
             provider: 'istanbul',
             reporter: ['text', 'lcov'],

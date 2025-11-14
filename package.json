@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "vitest",
+    "test:ci": "vitest --coverage",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --ui --coverage",
     "build": "rollup -c",
@@ -28,7 +29,8 @@
     "rollup-plugin-typescript2": "^0.34.1",
   "vue": "^3.5.24",
     "typescript": "^5.2.2",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "vitest-junit": "^0.6.0"
   },
   "peerDependencies": {
     "vue": "^3"
