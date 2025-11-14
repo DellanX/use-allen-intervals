@@ -1,6 +1,7 @@
 {
   "name": "use-allen-intervals",
   "version": "0.1.0",
+  "type": "module",
   "description": "A library for composable interactions and checks for allen interval algebra",
   "main": "dist/index.js",
   "module": "dist/index.js",
